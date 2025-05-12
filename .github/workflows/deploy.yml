@@ -17,7 +17,7 @@ jobs:
         run: composer install --no-dev --prefer-dist
 
       - name: 🧪 Run tests
-        run: php artisan test
+        run: vendor/bin/phpunit
 
   push:
     name: 🚀 Push Code to GitHub
